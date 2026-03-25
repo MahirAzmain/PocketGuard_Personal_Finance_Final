@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/bank_svgrepo_com__2_"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bank_svgrepo_com__2_"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PocketGuard"
+        tools:targetApi="31">
+        <activity
+            android:name=".Account.ShowImage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Account.Login"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".Map.Parental_Control"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+
+        <activity android:name=".AddExpenceIncomeActivity" />
+        <activity android:name=".GoalSet.GoalRecyclerView" />
+        <activity android:name=".ShowData.Sqlite_ListActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".Account.Register" />
+        <activity
+            android:name=".Map.Maps_Activity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".Bookmarks.Sqlite_StudentListActivity" />
+        <activity android:name=".WebPages.All_Web_Pages_NoAds" />
+        <activity android:name=".WebPages.Firebase_Notification_List_Class" />
+        <activity android:name=".Json.MainActivity_Json" />
+        <activity android:name=".Json.Rank" />
+        <activity android:name=".Json.Rate_View" />
+        <activity android:name=".Json.Ratings" />
+        <activity
+            android:name=".Settings.PinConfirm"
+            android:exported="false" />
+        <activity
+            android:name=".Settings.PinEnterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Settings.Settings"
+            android:exported="false" />
+        <activity
+            android:name=".Settings.LoginActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".FCMMessageReceiverService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+
+        <activity
+            android:name=".Gpt"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:name=".SPLASH_SCREEN"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <item
+            android:id="@+id/top_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/top_apps_24"
+            android:title="Top Apps Info" />
+        <item
+            android:id="@+id/set_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/goal_set"
+            android:title="Set Goals" />
+    </group>
+</menu>

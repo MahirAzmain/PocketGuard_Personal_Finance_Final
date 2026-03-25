@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="7dp"
+        >
+        <LinearLayout
+            android:id="@+id/container_single_notification_item"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:weightSum="4"
+            android:background="#E0E6A7"
+
+            >
+            <ImageView
+                android:id="@+id/image_View_ID_notification"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bookmark_image_link_icon"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/name_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:text="Name"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/myColor"
+
+                    />
+
+                <TextView
+                    android:id="@+id/address_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp"
+                    android:textColor="@color/myColor"
+                    android:layout_gravity="center"
+                    android:text="Address"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/notification_date_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp"
+                    android:textColor="#0049FF"
+                    android:textAlignment="textStart"
+                    android:layout_marginRight="15dp"
+                    android:text="Date Time"
+                    android:textStyle="italic"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

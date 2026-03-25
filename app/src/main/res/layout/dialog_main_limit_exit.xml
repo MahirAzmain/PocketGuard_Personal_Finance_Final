@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_feedback_taking_from_review_dialog"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message From Admin"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#E8D5D5" />
+
+            <TextView
+                android:id="@+id/textView_1_in_review_dialog_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Admin : PocketGuard"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/textView_2_in_review_dialog_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="আপনার সেট করে দেওয়া লিমিট অতিক্রম হয়ে যাচ্ছে"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:layout_marginBottom="5dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#E8D5D5" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                >
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/do_not_send_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/favourite_colour"
+                    android:text="No Thanks!"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/sending_feedback_btn_review_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/favourite_colour"
+                    android:text="Set The Limit"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
