@@ -149,6 +149,9 @@ PocketGuard follows clean Android architecture principles with well-documented d
 | **CI/CD** | GitHub Actions |
 
 ---
+## Diagram
+
+<img width="12178" height="4665" alt="diagram" src="https://github.com/user-attachments/assets/3e14b10c-3eb2-46f1-a626-e814952a2cdc" />
 
 ## 📁 Project Structure
 
